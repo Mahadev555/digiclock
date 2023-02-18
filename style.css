@@ -4,8 +4,10 @@
 }
 
 body {
-       
+    font-family: sans-serif;
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,8 +16,9 @@ body {
     background: url(bg1.jpg);
     background-size: cover;
     overflow: hidden;
-    flex-wrap : wrap;
+    
 }
+
 
 h2{
     text-transform: uppercase;
@@ -28,15 +31,17 @@ h2{
 }
 .clock {
     display: flex;
-
+     
 }
 
 .clock div{
+    
     margin: 5px;
     position: relative;
 }
 
 .clock span{
+    border-radius: 6px 6px  0px 0px;
     width: 100px;
     height: 80px;
     background-color: rgb(1, 2, 73);
@@ -51,6 +56,7 @@ h2{
 }
 
 .clock .text{
+    border-radius: 0px 0px 6px 6px  ;
     height: 30px;
     font-size: 10px;
     text-transform: uppercase;
@@ -60,6 +66,7 @@ h2{
 }
 
 .clock #ampm{
+    border-radius: 6px;
     position: absolute;
     bottom: 0;
     width: 60px;
@@ -70,8 +77,13 @@ h2{
 }
 
 @media screen and (max-width: 480px) {
-     
+    body{
+        padding-top: 20px;
+    padding-bottom: 50px;
+    }
     .clock {
+    padding-top: 2px;
+    padding-bottom: 20px;
        display: flex;
        flex-direction: column;
     }
