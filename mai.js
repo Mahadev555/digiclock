@@ -4,14 +4,15 @@ const seconds1 = document.getElementById("seconds")
 const ampm1 = document.getElementById("ampm")
 
 function clockUpdate(){
+    
     let h = new Date().getHours()
     let m = new Date().getMinutes()
     let s = new Date().getSeconds()
     let ampm = "AM"
 
     if(h>12){
-        h = h - 12
-        ampm = "PM"
+        h = h - 12;
+        ampm = "PM";
     }
 
     h = h < 10 ? "0"+h : h;
@@ -21,7 +22,7 @@ function clockUpdate(){
     hour1.innerText = h;
     minutes1.innerText = m;
     seconds1.innerText = s;
-    ampm1,(innerText = ampm);
+    ampm1.innerText = ampm;
 
     setTimeout(()=>{
        clockUpdate()
