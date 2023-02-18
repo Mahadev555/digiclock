@@ -13,6 +13,7 @@ body {
     background: url(bg1.jpg);
     background-size: cover;
     overflow: hidden;
+    flex-wrap : wrap;
 }
 
 h2{
